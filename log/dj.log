@@ -1,0 +1,21 @@
+# Logfile created on 2014-07-16 13:32:10 -0400 by logger.rb/43513
+I, [2014-07-16T13:32:11.721724 #4828]  INFO -- : 2014-07-16T13:32:11-0400: [Worker(host:janeldicarismbp pid:4828)] Starting job worker
+I, [2014-07-16T13:33:21.964039 #4828]  INFO -- : 2014-07-16T13:33:21-0400: [Worker(host:janeldicarismbp pid:4828)] Job Class#poll_close (id=4) RUNNING
+I, [2014-07-16T13:33:23.503386 #4828]  INFO -- : 2014-07-16T13:33:23-0400: [Worker(host:janeldicarismbp pid:4828)] Job Class#poll_close (id=4) COMPLETED after 1.5391
+I, [2014-07-16T13:33:23.505517 #4828]  INFO -- : 2014-07-16T13:33:23-0400: [Worker(host:janeldicarismbp pid:4828)] 1 jobs processed at 0.5959 j/s, 0 failed
+I, [2014-07-18T11:42:36.767026 #13196]  INFO -- : 2014-07-18T11:42:36-0400: [Worker(host:janeldicarismbp pid:13196)] Starting job worker
+I, [2014-07-18T11:42:37.026723 #13196]  INFO -- : 2014-07-18T11:42:37-0400: [Worker(host:janeldicarismbp pid:13196)] Job MyStruct (id=5) RUNNING
+I, [2014-07-18T11:42:42.056865 #13196]  INFO -- : 2014-07-18T11:42:42-0400: [Worker(host:janeldicarismbp pid:13196)] Job Delayed::PerformableMethod (id=6) RUNNING
+I, [2014-07-18T11:42:47.235289 #13196]  INFO -- : 2014-07-18T11:42:47-0400: [Worker(host:janeldicarismbp pid:13196)] Job Delayed::PerformableMailer (id=1) RUNNING
+I, [2014-07-18T11:42:52.315568 #13196]  INFO -- : 2014-07-18T11:42:52-0400: [Worker(host:janeldicarismbp pid:13196)] Job Delayed::PerformableMailer (id=3) RUNNING
+I, [2014-07-18T11:42:57.427678 #13196]  INFO -- : 2014-07-18T11:42:57-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=7) RUNNING
+I, [2014-07-18T11:43:01.673531 #13196]  INFO -- : 2014-07-18T11:43:01-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=7) COMPLETED after 4.2274
+I, [2014-07-18T11:43:01.682539 #13196]  INFO -- : 2014-07-18T11:43:01-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=11) RUNNING
+I, [2014-07-18T11:43:03.553627 #13196]  INFO -- : 2014-07-18T11:43:03-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=11) COMPLETED after 1.8701
+I, [2014-07-18T11:43:03.564581 #13196]  INFO -- : 2014-07-18T11:43:03-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=14) RUNNING
+I, [2014-07-18T11:43:04.422497 #13196]  INFO -- : 2014-07-18T11:43:04-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=14) COMPLETED after 0.8575
+I, [2014-07-18T11:43:04.431412 #13196]  INFO -- : 2014-07-18T11:43:04-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=15) RUNNING
+I, [2014-07-18T11:43:05.418789 #13196]  INFO -- : 2014-07-18T11:43:05-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=15) COMPLETED after 0.9870
+I, [2014-07-18T11:43:05.430478 #13196]  INFO -- : 2014-07-18T11:43:05-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=16) RUNNING
+I, [2014-07-18T11:43:06.272883 #13196]  INFO -- : 2014-07-18T11:43:06-0400: [Worker(host:janeldicarismbp pid:13196)] Job Class#poll_close (id=16) COMPLETED after 0.8420
+I, [2014-07-18T11:43:06.274610 #13196]  INFO -- : 2014-07-18T11:43:06-0400: [Worker(host:janeldicarismbp pid:13196)] 5 jobs processed at 0.5595 j/s, 0 failed

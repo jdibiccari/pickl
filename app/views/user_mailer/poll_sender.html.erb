@@ -1,0 +1,17 @@
+Hi there,
+<br>
+<br>
+<%= @user.name %> (<%= @user.email %>) invited you to a Pickleback poll called "<%= @poll.question %>"
+
+<% if !@message.empty? %>
+    and left you this message:
+    <br>
+    <br>
+    <%= @message %>
+<% end %>
+<br>
+<br>
+<a href="http://localhost:3000<%= new_vote_path(@poll.token) %>">Click here to vote!</a>
+<br>
+<br>
+(This poll expires at <%= @poll.expiration %>.)

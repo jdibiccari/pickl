@@ -8,7 +8,7 @@
   <br>
     <div class="form-group">
     <label for="Share">Share with a link</label>
-    <input type="text" id="Share" value="localhost:3000/answer_me/<%=@poll.token%>/vote", size = 56, class="form-control" />
+    <input type="text" id="Share" value="poll.pickl.me/answer_me/<%=@poll.token%>/vote", size = 56, class="form-control" />
     </div>
     <%= form_tag poll_recipients_path(@poll) do %>
     <form role="form">

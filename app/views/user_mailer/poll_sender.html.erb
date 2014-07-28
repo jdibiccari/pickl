@@ -11,7 +11,7 @@ Hi there,
 <% end %>
 <br>
 <br>
-<a href="http://localhost:3000<%= new_vote_path(@poll.token) %>">Click here to vote!</a>
+<a href="http://poll.pickl.me/<%= new_vote_path(@poll.token) %>">Click here to vote!</a>
 <br>
 <br>
 (This poll expires at <%= @poll.expiration %>.)

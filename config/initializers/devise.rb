@@ -1,7 +1,8 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-
+  #secret key for Devise
+  config.secret_key = '36a240be5878fa138780791f033f0a27428adffdc3030e0e236c19c8fff2b255b7cc7c9960e9af86f0fa7fbea5e8c508254cbf2880680d63b8f13f289db44acf'
   # Google authentication requirements
   require 'omniauth-google-oauth2'
 config.omniauth :google_oauth2, "47076249003-nm2p47gnvusr9i1op22blfpmdba2a4cf.apps.googleusercontent.com", "8DAPg4eNbe1VVEY2rFEEUgY6", { access_type: "offline", approval_prompt: "" }

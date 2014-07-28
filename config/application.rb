@@ -11,6 +11,7 @@ module Pickleback
     config.active_record.default_timezone = :local
     config.sass.load_paths << File.expand_path('../../vendor/assets/stylesheets/')
 
+    config.serve_static_assets = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

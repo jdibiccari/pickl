@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: pickl_production
-  username: pickl
+  # username: pickl
   password: <%= ENV['PICKL_DATABASE_PASSWORD'] %>

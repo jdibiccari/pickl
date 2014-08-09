@@ -99,15 +99,15 @@ dp(document).ready(function() {
         bg_image.backstretch(bg_image_src);
     }
     //COUNT DOWN COMING SOON
-    if (dp.fn.countdown) {
-        var endDate = "December 31, 2014  15:03:25"; // <-- Change to your date launch.
-        dp('.countdown.styled').countdown({
-            date: endDate,
-            render: function(data) {
-                dp(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-            }
-        });
-    }
+    // if (dp.fn.countdown) {
+    //     var endDate = "December 31, 2014  15:03:25"; // <-- Change to your date launch.
+    //     dp('.countdown.styled').countdown({
+    //         date: endDate,
+    //         render: function(data) {
+    //             dp(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+    //         }
+    //     });
+    // }
 
     //HTML 5 Audio Player
     if (dp.fn.mediaelementplayer) {

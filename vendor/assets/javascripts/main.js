@@ -5,12 +5,12 @@ dp(document).ready(function() {
     Grid.init();
     // Superslides fullscreen slider
     dp('#slides').superslides({
-        animation: 'fade', // Choose between slide or fade
-        play: 4000
+        animation: 'slide', // Choose between slide or fade
+        play: false
     });
     dp('#slides_cs').superslides({
-        animation: 'fade', // Choose between slide or fade
-        play: 4000,
+        animation: 'slide', // Choose between slide or fade
+        play: false,
         pagination: false
     });
     //BACK TO TOP

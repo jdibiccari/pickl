@@ -1,4 +1,4 @@
-$( document ).on( 'page:change', function () {
+$( document ).ready(function () {
   var expiration = $('.countdown').data('expiration');
   $('.countdown').countdown({
     date: new Date(expiration),

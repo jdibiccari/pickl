@@ -5,6 +5,7 @@ class RecipientsController < ApplicationController
   end
 
   def new
+    render :new if validate_user
   end
 
   def create
@@ -40,5 +41,16 @@ class RecipientsController < ApplicationController
 
   def poll_params
     params.require(:recipient).permit(:email, :poll_id)
+  end
+
+  def validate_user
+    if user_signed_in?
+      if current_user.id == @poll.user_id
+        return true
+      end
+    else
+      flash[:notice] = "Uh oh, I don't think you have access to this poll!"
+      redirect_to root_path and return
+    end
   end
 end

@@ -16,6 +16,7 @@ class PollsController < ApplicationController
 
   def show
     # GET: takes you to edit or confirm
+    render :show if validate_user
   end
 
   def create
@@ -33,6 +34,7 @@ class PollsController < ApplicationController
   end
 
   def edit
+    render :edit if validate_user
   end
 
   def update
@@ -57,5 +59,16 @@ class PollsController < ApplicationController
 
   def poll_params
     params.require(:poll).permit(:sort, :question, :expiration, :token, :user_id, :filepicker_url, :options_attributes=>[:answer, :filepicker_url, :id])
+  end
+
+  def validate_user
+    if user_signed_in?
+      if current_user.id == @poll.user_id
+        return true
+      end
+    else
+      flash[:notice] = "Uh oh, I don't think you have access to this poll!"
+      redirect_to root_path and return
+    end
   end
 end

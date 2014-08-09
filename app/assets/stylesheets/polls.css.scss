@@ -1,5 +1,52 @@
+#slides {
+    background: #96b4a0;
+}
+
+nav.slides-pagination a.current {
+    background: #5a966e;
+}
+
+.poll-cards {
+    background: white;
+    border-radius: 30px;
+    padding: 1.5% 5% 1.5% 5%;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(247, 247, 247, 0.4);*/
+}
+
+.polls-wrapper {
+    background: #F7F7F7;
+    text-align: center;
+    height: 100%;
+}
+
+.polls-index-wrapper {
+    padding-top: 100px;
+    background: #F7F7F7;
+    text-align: center;
+    height: 100%;
+}
+
+.polls-subtitle .sub{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+.polls-title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    color: #25292c;
+    z-index: 2;
+}
+
 label.pollmaker-header {
     font-size: 30px;
+    font-weight: 400;
     display: block;
 }
 
@@ -31,4 +78,57 @@ hr.title-break {
 div.poll-buttons {
     margin: 50px auto;
     text-align: center;
+}
+
+a.sub {
+    color: black;
+    font-weight: 500;
+}
+
+.panel-group {
+    padding-bottom: 20px;
+    background: #F7F7F7;
+}
+
+.panel-group .panel {
+    width: 60%;
+    margin: 5px auto;
+    border-radius: 12px;
+}
+
+.accordion-title{
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 0;
+    color: #999;
+    padding: 0 10%;
+    text-align: left;
+}
+
+.panel-body {
+    text-align: left;
+    margin: 0 10%;
+}
+
+a.dropdown-toggle {
+    color: #5a966e;
+}
+
+.dropdown-menu {
+    background-color: #5a966e;
+}
+
+.dropdown-menu li:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    background-color: none;
+    color: none;
+}
+
+.dropdown.navbar-nav {
+    /*float: none;*/
 }

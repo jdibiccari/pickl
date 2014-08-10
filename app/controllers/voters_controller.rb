@@ -7,10 +7,9 @@ class VotersController < ApplicationController
         if session[:voter] == voter.uuid
           flash[:notice] = "You've already voted on this poll!"
           redirect_to root_path and return
-        else
-          render :new and return
         end
       end
+      render :new and return
     else
       redirect_to result_path(@poll.id)
     end

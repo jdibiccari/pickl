@@ -10,7 +10,7 @@
       </h2>
        
       <div>
-        <h2><%= @poll.question %></h2>
+        <h2><strong><%= @poll.question %></strong></h2>
         <%unless @poll.filepicker_url.empty?%>
           <%=filepicker_image_tag @poll.filepicker_url, w: 300, h: 300%><br>
         <%end%>

@@ -22,8 +22,13 @@
  *= require_tree .
  */
 
+.outter {
+    /*padding-bottom: 100px;*/
+    height: auto;
+}
+
 .fill-wrapper {
-    padding: 100px 0 0 0;
+    padding-top: 100px;
 }
 
 .flash {
@@ -241,4 +246,24 @@
     text-shadow: none;
     margin-top: 0px;
     padding: 0 0;
+}
+
+footer.footer {
+    background: #5a966e; /*green*/
+    /*background: #25292c;*/ /*slate*/
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    /*color: #5a966e;*/ /* green*/
+    color: #25292c; /*slate*/
 }

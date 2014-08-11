@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.skill-bar ul li {
+    width: 404px;
+    margin: 0 auto;
+}
+
 .skill-bar ul li .bar {
     background: #5a966e;
 }

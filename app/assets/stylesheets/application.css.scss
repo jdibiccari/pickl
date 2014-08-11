@@ -173,6 +173,30 @@
     color: #5a966e;
 }
 
+.row {
+    text-align: center;
+}
+
+/* Voting options */
+.opt-btn {
+    margin: 0 auto;
+    padding: 5px 15px;
+    background-color: #5a966e;
+    border: 2px solid #5a966e;
+    border-radius: 3px;
+    width: 404px;
+}
+
+.opt-txt {
+    font-size: 22px;
+    font-weight: 300;
+    color: #FFF; 
+}
+
+.opt-txt label {
+    margin: 0;
+}
+
 /* Countdown timer*/
 #timer-wrapper {
     width: 100%;

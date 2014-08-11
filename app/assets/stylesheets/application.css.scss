@@ -22,6 +22,10 @@
  *= require_tree .
  */
 
+.fill-wrapper {
+    padding: 100px 0 0 0;
+}
+
 .flash {
   position: relative;
   top: 44px;
@@ -167,4 +171,50 @@
 
 .main-color {
     color: #5a966e;
+}
+
+/* Countdown timer*/
+#timer-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+#timer {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#timer h3 {
+    float: left;
+    font-weight: normal;
+    position: relative;
+    top: 14px;
+}
+.countdown {
+    float: left;
+}
+
+.styled div {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center; 
+    color: #25292c;
+    margin: 5px 0;
+    padding: 15px 0 0 0;
+}
+
+.styled div span {
+    display: block;
+    width: 60px;
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-align: center;
+    color: black;
+    background: none;
+    text-shadow: none;
+    margin-top: 0px;
+    padding: 0 0;
 }

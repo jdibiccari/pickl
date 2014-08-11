@@ -1,11 +1,58 @@
-<div class="voter-thanks-fill bg-parallax bg-skill" style="background-image: url('<%= asset_path('bg-service.jpg') %>');">
+<div class="section-fill bg-parallax bg-skill" style="background-image: url('<%= asset_path('bg-service.jpg') %>');">
   <div class="fill-wrapper">
-      <div class="section-title">
-          <h2 class="animated fadeInDown" data-effect="fadeInDown"><strong>THANK YOU FOR VOTING!</strong></h2>
-          <hr class="title-break">
+    <div class="section-title">
+        <h2 class="animated fadeInDown" data-effect="fadeInDown">
+            <strong>Thank you for voting!</strong>
+        </h2>
+        <hr class="title-break">
+    </div>
+    <div class="section-title">
+      <h2><strong>Current results for:</strong></h2>
+      <div>
+        <h2><strong><%= @poll.question %></strong></h2>
+        <%unless @poll.filepicker_url.empty?%>
+          <%=filepicker_image_tag @poll.filepicker_url, w: 300, h: 300%><br>
+        <%end%>
+      </div>      
+      <hr class="title-break">
+      <%if Time.now > @poll.expiration%>
+        <h2>The winner is: <span class= "main-color"><%= @poll.winner %></span></h2><br>
+      <%end%>
+    </div><!--section-title-->
+
+    <div class="container">
+      <div class="row">
+        <% @poll.options.each do |option| %>
+        <div class="col-md-6">
+          <div class="skill-bar">
+            <ul>
+              <li>
+                <div class="bar" data-value="<%=option.vote_percent%>" style="width: <%=option.vote_percent%>%;">
+                  <h5 class="opt-txt"><%= option.answer %></h5>
+                  <span><%= option.vote_proportion_string %></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <% end %>
+        <% @poll.options.each do |option| %>
+          <div class="col-md-6">
+            <% unless option.filepicker_url.empty? %>
+                <%=filepicker_image_tag option.filepicker_url, h: 300, w: 400, fit: 'crop'%><br>
+            <% end %>
+          </div>
+        <% end %>
       </div>
     </div>
-
+    <br><br>
+    <% if Time.now < @poll.expiration %>
+          <div id="timer-wrapper">
+              <div id="timer">
+                  <h3>Poll closes in:</h3>
+                  <div id="countdownClock" class="countdown styled" data-expiration="<%= @poll.expiration %>"></div>
+              </div><!--timer-->
+          </div><!--timer-wrapper-->
+      <% end %>
+  </div><!--fill-wrapper-->
 </div>
-
-

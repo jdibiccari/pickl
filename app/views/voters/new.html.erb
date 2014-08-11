@@ -13,6 +13,14 @@
                 <%= filepicker_image_tag @poll.filepicker_url, w: 300, h: 300 %><br>
                 <% end %>
             </div>
+            <% if Time.now < @poll.expiration %>
+                <div id="timer-wrapper">
+                    <div id="timer">
+                        <h3>Poll closes in:</h3>
+                        <div id="countdownClock" class="countdown styled" data-expiration="<%= @poll.expiration %>"></div>
+                    </div><!--timer-->
+                </div><!--timer-wrapper-->
+            <% end %>
             <hr class="title-break">
         </div>
         <div class="container">
@@ -41,12 +49,6 @@
                     </div>
                 <%end%>
             </div> <!-- row -->
-
-            <% if Time.now < @poll.expiration %>
-            <div id="countdownClock" class="countdown styled" data-expiration="<%= @poll.expiration %>">
-            </div>
-            <% end %>
-
         </div>
     </div>
 </div>

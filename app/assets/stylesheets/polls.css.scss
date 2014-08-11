@@ -21,10 +21,10 @@ nav.slides-pagination a.current {
 }
 
 .polls-index-wrapper {
-    padding-top: 100px;
+    padding: 100px 0;
     background: #F7F7F7;
     text-align: center;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .polls-subtitle .sub{
@@ -86,14 +86,16 @@ a.sub {
 }
 
 .panel-group {
-    padding-bottom: 20px;
     background: #F7F7F7;
 }
 
 .panel-group .panel {
+    border-radius: 12px;
+}
+
+.panel-group {
     width: 60%;
     margin: 5px auto;
-    border-radius: 12px;
 }
 
 .accordion-title{
@@ -129,6 +131,7 @@ a.dropdown-toggle {
     color: none;
 }
 
-.dropdown.navbar-nav {
-    float: none;
+.dropdown.indexsort {
+    position: fixed;
+    margin-left: 81%;
 }

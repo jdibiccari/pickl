@@ -1,15 +1,18 @@
-<section id="Share">
-  <div class="section-form">
-  <div class="col-md-6">
-  <br>
-  <div class="form-group">
-    <label for="Thanks">Thank you! Your poll has been sent to the following recipients:</label>
-<ul>
-    <% @recipients.split(',').each do |recipient| %>
-        <li><%= recipient %></li>
-    <% end %>
-</ul>
-<p>Your poll results will be ready for you at <%= @poll.expiration %>.</p>
-<br>
-<%= link_to 'Back to all polls', polls_path %>
+<section id="share">
+    <div class="recipients-form">
+        <br>
+        <div class="form-group">
+            <label for="Thanks"><h2>Thank you!</h2></label>
+            <p>Your poll has been sent to the following recipient(s):</p>
+            <ul>
+                <% @recipients.split(',').each do |recipient| %>
+                    <li><%= recipient %></li>
+                <% end %>
+            </ul>
+            <p>Your poll results will be ready for you at <%= @poll.expiration %>.</p>
+            <br>
+            <%= link_to 'Back to all polls', polls_path %>
+        </div>
+    </div>
+</section>
 

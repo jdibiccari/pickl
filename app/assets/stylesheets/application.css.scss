@@ -22,10 +22,11 @@
  *= require_tree .
  */
 
- .flash {
-  position: absolute;
-  top: 15%;
-  right: 2%;
+.flash {
+  position: relative;
+  top: 44px;
+  width: 100%;
+  text-align: center;
  }
 
 #wrapper {
@@ -162,4 +163,8 @@
 
 .navbar-default .navbar-nav>li>a {
     color: white;
+}
+
+.main-color {
+    color: #5a966e;
 }

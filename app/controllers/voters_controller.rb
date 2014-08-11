@@ -23,4 +23,8 @@ class VotersController < ApplicationController
     voter.polls << @poll
     redirect_to vote_path(@poll.token)
   end
+
+  def show
+    @poll = Poll.find_by(token: params[:token])
+  end
 end

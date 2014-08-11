@@ -1,4 +1,4 @@
-<div class="section-fill bg-parallax bg-skill" style="background-image: url('<%= asset_path('bg-service.jpg') %>');">
+<div class="section-fill bg-parallax bg-skill">
   <div class="fill-wrapper">
     <div class="section-title">
         <h2 class="animated fadeInDown" data-effect="fadeInDown">
@@ -14,7 +14,7 @@
           <%=filepicker_image_tag @poll.filepicker_url, w: 300, h: 300%><br>
         <%end%>
       </div>      
-      <hr class="title-break">
+     <br><br>
       <%if Time.now > @poll.expiration%>
         <h2>The winner is: <span class= "main-color"><%= @poll.winner %></span></h2><br>
       <%end%>

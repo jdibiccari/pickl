@@ -245,6 +245,7 @@ position: relative;
     color: #25292c;
     margin: 5px 0;
     padding: 15px 0 0 0;
+    background: #F7F7F7;
 }
 
 .styled div span {
@@ -255,7 +256,7 @@ position: relative;
     text-transform: lowercase;
     text-align: center;
     color: black;
-    background: none;
+    background: #F7F7F7;
     text-shadow: none;
     margin-top: 0px;
     padding: 0 0;
@@ -273,7 +274,8 @@ footer.footer {
 }
 
 #polls-index-footer footer.footer{
-    position: static;
+    position: relative;
+    margin-top: -6em;
 }
 
 footer p {

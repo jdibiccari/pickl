@@ -24,7 +24,8 @@ nav.slides-pagination a.current {
     padding: 100px 0;
     background: #F7F7F7;
     text-align: center;
-    /*height: 100%;*/
+    height: auto;
+    min-height: 100%;
 }
 
 .polls-subtitle .sub{

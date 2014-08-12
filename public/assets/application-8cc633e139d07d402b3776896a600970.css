@@ -4304,7 +4304,6 @@ p {
     line-height: 23px;
 }
 .outter{
-    position: relative;
     width: 100%;
     height: 100%;
     display: block;
@@ -7419,7 +7418,6 @@ p {
     display: block;
 }
 .outter {
-    position: relative;
     width: 100%;
     height: 100%;
     display: block;

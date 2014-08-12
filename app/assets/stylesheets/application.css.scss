@@ -24,20 +24,33 @@
 
 .outter {
     /*padding-bottom: 100px;*/
-    height: 100%;
+    position:static !important;
 }
 
 .fill-wrapper {
     padding-top: 100px;
 }
 
-.flash {
-  position: relative;
-  top: 44px;
-  width: 100%;
+.flash {    
+position: relative;
+  top: 15%;
+  left: 78%;
+  width: 20%;
   text-align: center;
+
  }
 
+ .alert-info{
+   background: #5a966e;
+    border-radius: 13px;
+ }
+.alert-dismissable .close{
+    top: -19px;
+    right: -19px;    
+    background: #5a966e;
+    border-radius: 13px;
+    color: black;
+}
 #wrapper {
     text-align: center;
 }
@@ -251,6 +264,9 @@
 footer.footer {
     background: #5a966e; /*green*/
     /*background: #25292c;*/ /*slate*/
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     padding: 15px 0;
     text-align: center;
 }
@@ -272,6 +288,17 @@ div.form-group a{
     color: white;
 }
 
+div .form-group .back{
+    color: #5a966e;
+}
+
+
 #countdownClock{
     padding-top: 2%;
+}
+
+.content-home-wrapper{
+    position:static !important;
+    width: auto;
+    height: auto;   
 }

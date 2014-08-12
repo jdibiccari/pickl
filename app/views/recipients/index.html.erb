@@ -11,8 +11,11 @@
             </ul>
             <p>Your poll results will be ready for you at <%= @poll.expiration %>.</p>
             <br>
-            <%= link_to 'Back to all polls', polls_path %>
+            <%= link_to 'Back to all polls', polls_path, class:'btn btn-dark'%>
         </div>
     </div>
 </section>
+<% content_for :footer do %>
+    <%= render'layouts/footer'%>
+<% end %>
 

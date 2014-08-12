@@ -263,17 +263,23 @@ position: relative;
 
 footer.footer {
     background: #5a966e; /*green*/
-    /*background: #25292c;*/ /*slate*/
+    /*background: #25292c;*/ /*slate*/ 
     position: fixed;
     width: 100%;
     bottom: 0;
     padding: 15px 0;
     text-align: center;
+    z-index: 2;
+}
+
+#polls-index-footer footer.footer{
+    position: static;
 }
 
 footer p {
     margin: 0;
 }
+html, body {margin:0;padding:0;height:100%;}
 
 footer a {
     color: white;
@@ -288,6 +294,15 @@ div.form-group a{
     color: white;
 }
 
+#sign_up .col-md-6{
+    float: none;
+}
+
+#log_in .col-md-6{
+    float: none;
+}
+
+
 div .form-group .back{
     color: #5a966e;
 }
@@ -298,7 +313,23 @@ div .form-group .back{
 }
 
 .content-home-wrapper{
-    position:static !important;
     width: auto;
     height: auto;   
+}
+
+div .tooltip-inner{
+ white-space: nowrap;
+}
+
+
+body{
+    background-color: #F7F7F7;
+}
+
+div .form-group .black-link{
+    color: black;
+}
+
+a.green-text{
+    color: #5a966e
 }

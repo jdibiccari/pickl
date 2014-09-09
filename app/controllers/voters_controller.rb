@@ -1,5 +1,4 @@
 class VotersController < ApplicationController
-
   def new
     @poll = Poll.find_by(token: params[:token])
     if Time.now <= @poll.expiration
@@ -28,3 +27,4 @@ class VotersController < ApplicationController
     @poll = Poll.find_by(token: params[:token])
   end
 end
+

@@ -4,13 +4,6 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-food_poll_A:
+janel:
     id: 1
-    answer: definitely
-    poll: food_poll
-
-#
-food_poll_B:
-    id: 2
-    answer: no way
-    poll: food_poll
+    uuid: ababab
